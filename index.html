@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brady Smith — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- MOBILE TOP BAR -->
+  <div class="mobile-bar">
+    <a class="mobile-logo" href="#home">Brady <span>Smith</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-top">
+        <div class="avatar">
+          <img src="images/Headshot.png" alt="Brady Smith" />
+        </div>
+        <h1 class="side-name">Brady Smith</h1>
+        <p class="side-role"><span>Business Analytics + CS</span> · Class of 2027</p>
+      </div>
+
+      <nav class="side-nav">
+        <a href="#home" onclick="closeSidebar()">Home</a>
+        <a href="#about" onclick="closeSidebar()">About</a>
+        <a href="#experience" onclick="closeSidebar()">Experience</a>
+        <a href="#education" onclick="closeSidebar()">Education</a>
+        <a href="#projects" onclick="closeSidebar()">Projects</a>
+        <a href="#contact" onclick="closeSidebar()">Contact</a>
+        <a class="side-resume" href="resume.pdf" download onclick="closeSidebar()"><i class="fas fa-download"></i> Resume</a>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="side-socials">
+          <a href="https://www.linkedin.com/in/brady-smith-a1a301260/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/bradysmith2027-pixel" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:bradysmith_2027@depauw.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="side-copy">© 2026 Brady Smith · Powell, OH</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <!-- HOME -->
+    <section id="home">
+      <div class="hero-block">
+        <div class="hero-eyebrow">Open to Full-Time Roles · May 2027</div>
+        <h2 class="hero-title">I turn <em>data</em><br />into <em>decisions.</em></h2>
+        <p class="hero-tagline">
+          I'm a senior at DePauw University studying Business Analytics and Computer Science — looking for full-time roles in data analytics, business intelligence, or software engineering.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+          <a href="resume.pdf" download class="btn-secondary"><i class="fas fa-download"></i> Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <span class="section-label">About</span>
+      <h2 class="section-title">A little more about me.</h2>
+      <div class="about-grid">
+        <div class="about-bio">
+          <p>I'm a senior at <strong>DePauw University</strong> studying Business Analytics and Computer Science. I decided to pursue these degrees because I wanted to understand both sides — the data and the code — and use them together to actually solve real world problems. Not just analyze a problem and hand it off, but build something that fixes them.</p>
+          <p>At <strong>PAM Health</strong>, I grew my technical skills as a Data Analyst, working in Excel, building dashboards in Looker and providing valuable insight to executives on potential expansion. At <strong>Turner Construction</strong>, I grew as a leader and a better communicator — working on a $2.6 billion project with a strict schedule taught me a multitude of skills I couldn't have picked up anywhere else. I also started my own sports card business from scratch, starting with $100 and growing it to over $10K in inventory and cash, which taught me just how valuable relationships among people can truly be.</p>
+          <p>I also compete on the <strong>NCAA DePauw Men's Soccer Team</strong>. Two NCAA Tournament runs, back-to-back NCAC championships. Putting in 15+ hours a week on top of everything else has taught me how to stay focused when things get hard — which comes up a lot.</p>
+          <p>Every one of these experiences — the dashboards, the job sites, the business, the soccer field — has shaped the way I think and work. I show up differently now than I did three years ago, and I'm only getting started.</p>
+
+          <div class="about-subheading">Skills</div>
+          <div class="skills-section">
+            <div class="skill-group fade-up">
+              <h4>Languages &amp; Programming</h4>
+              <div class="tags"><span>Python</span><span>Java</span><span>C++</span></div>
+            </div>
+            <div class="skill-group fade-up">
+              <h4>Data &amp; Analytics</h4>
+              <div class="tags"><span>Looker Studio</span><span>Tableau</span><span>Excel</span><span>Stata</span></div>
+            </div>
+            <div class="skill-group fade-up">
+              <h4>Business</h4>
+              <div class="tags"><span>P&amp;L Tracking</span><span>Inventory Management</span><span>PowerPoint</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-sidebar">
+          <div class="sidebar-block fade-up">
+            <div class="sidebar-block-label">Currently</div>
+            <div class="now-list">
+              <div class="now-item"><i class="fas fa-graduation-cap"></i><span>Senior at DePauw University</span></div>
+              <div class="now-item"><i class="fas fa-chalkboard-teacher"></i><span>Teaching Assistant — Intro to CS</span></div>
+              <div class="now-item"><i class="fab fa-google"></i><span>Completing Google Data Analytics Cert</span></div>
+              <div class="now-item"><i class="fas fa-briefcase"></i><span>Seeking full-time roles · May 2027</span></div>
+            </div>
+          </div>
+          <div class="sidebar-block fade-up">
+            <div class="sidebar-block-label">Areas of Interest</div>
+            <div class="interest-tags">
+              <span>Data Analytics</span>
+              <span>Business Intelligence</span>
+              <span>Software Engineering</span>
+              <span>Data Visualization</span>
+              <span>Product Analytics</span>
+              <span>Strategy &amp; Operations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <span class="section-label">Experience</span>
+      <h2 class="section-title">Where I've worked.</h2>
+      <p class="section-sub">Every role taught me something I couldn't have learned in a classroom.</p>
+      <div class="timeline">
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-left">
+            <div class="timeline-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-row">
+                <img src="images/depauw.jpg" alt="DePauw University" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="company-logo-placeholder" style="background:#B8012A;">DU</div>
+                <div>
+                  <h3>Teaching Assistant — Intro to Computer Science</h3>
+                  <span class="timeline-company">DePauw University</span>
+                </div>
+              </div>
+              <span class="timeline-date">Aug 2026 – Dec 2026</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Supported students through foundational CS concepts, debugging, and problem-solving</li>
+              <li>Held office hours, assisted with grading, and worked with faculty to improve student outcomes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-left">
+            <div class="timeline-icon"><i class="fas fa-hard-hat"></i></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-row">
+                <img src="images/turner.jpg" alt="Turner Construction" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="company-logo-placeholder" style="background:#F7A800;">TC</div>
+                <div>
+                  <h3>Superintendent Intern</h3>
+                  <span class="timeline-company">Turner Construction</span>
+                </div>
+              </div>
+              <span class="timeline-date">May 2026 – Jul 2026</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Tracked and updated construction schedules, identifying delays and out-of-sequence work before they became problems</li>
+              <li>Collaborated with subcontractors and trades to keep project deliverables on track</li>
+              <li>Monitored and resolved RFIs, keeping communication tight between field teams and project management</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-left">
+            <div class="timeline-icon"><i class="fas fa-hospital"></i></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-row">
+                <img src="images/pamhealth.jpg" alt="PAM Health" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="company-logo-placeholder" style="background:#0072BB;">PAM</div>
+                <div>
+                  <h3>Data Analyst Intern</h3>
+                  <span class="timeline-company">PAM Health</span>
+                </div>
+              </div>
+              <span class="timeline-date">Jun 2024 – Nov 2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Evaluated 100+ potential markets for expansion and delivered insights that shaped strategic growth decisions</li>
+              <li>Built Looker Studio dashboards identifying patient experience gaps — presented findings directly to executive leadership</li>
+              <li>Engineered KPI dashboards to monitor performance metrics across all 70 hospitals in real time</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-left">
+            <div class="timeline-icon"><i class="fas fa-store"></i></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-title-row">
+                <img src="images/dreamboat.jpg" alt="Dreamboat Slabs" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                <div class="company-logo-placeholder" style="background:#2e2b24;">DS</div>
+                <div>
+                  <h3>Founder &amp; Owner</h3>
+                  <span class="timeline-company">Dreamboat Slabs</span>
+                </div>
+              </div>
+              <span class="timeline-date">Jun 2024 – Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Launched and scaled a sports card reselling business across eBay, Instagram, and Facebook — nearly $10K in profit</li>
+              <li>Handle all operations: inventory management, customer relations, P&amp;L tracking, and point-of-sale</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <span class="section-label">Education</span>
+      <h2 class="section-title">Where I've learned.</h2>
+      <div class="education-grid">
+
+        <div class="edu-main fade-up">
+          <div class="edu-logo">
+            <img src="images/depauw.jpg" alt="DePauw University" class="company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="company-logo-placeholder" style="background:#B8012A; display:none;">DU</div>
+          </div>
+          <div class="edu-details">
+            <h3>DePauw University</h3>
+            <p class="edu-degree">B.S. Business Analytics &amp; Computer Science</p>
+            <p class="edu-dates">Aug 2023 – May 2027</p>
+            <div class="edu-badges">
+              <span class="badge">GPA 3.55</span>
+              <span class="badge">Dean's List ×5</span>
+              <span class="badge">NCAA Division III Athlete</span>
+              <span class="badge">Chi Alpha Sigma</span>
+              <span class="badge">Phi Delta Theta</span>
+              <span class="badge">Fellowship of Christian Athletes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-highlights fade-up">
+          <div class="edu-highlight-card">
+            <div class="highlight-icon"><i class="fas fa-trophy"></i></div>
+            <div>
+              <strong>Dean's List — 5 Semesters</strong>
+              <span>Spring 2024, Fall 2024, Spring 2025, Fall 2025, Spring 2026</span>
+            </div>
+          </div>
+          <div class="edu-highlight-card">
+            <div class="highlight-icon"><i class="fas fa-futbol"></i></div>
+            <div>
+              <strong>NCAA Men's Soccer</strong>
+              <span>2× NCAA Tournament · 2024 &amp; 2025 NCAC Tournament Champion · 2025 NCAC Regular Season Champion</span>
+            </div>
+          </div>
+          <div class="edu-highlight-card">
+            <div class="highlight-icon"><i class="fas fa-star"></i></div>
+            <div>
+              <strong>Chi Alpha Sigma</strong>
+              <span>National College Athlete Honor Society — recognized for academic excellence (3.5+ GPA) while competing varsity</span>
+            </div>
+          </div>
+          <div class="edu-highlight-card">
+            <div class="highlight-icon"><i class="fas fa-heart"></i></div>
+            <div>
+              <strong>Iron Phi — Phi Delta Theta</strong>
+              <span>Raised $1,000 and completed an athletic feat in support of ALS research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-section fade-up">
+          <div class="sidebar-block-label">Certifications</div>
+          <div class="cert-card">
+            <i class="fab fa-google"></i>
+            <div>
+              <strong>Google Advanced Data Analytics Certificate</strong>
+              <span>In Progress · 2026</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <span class="section-label">Projects</span>
+      <h2 class="section-title">Things I've built.</h2>
+      <p class="section-sub">Here's some of the work I'm most proud of. Each one started with a real problem and ended with something that actually worked.</p>
+      <div class="projects-grid">
+
+        <div class="project-card fade-up">
+          <div class="project-imgs">
+            <img src="images/snapfuel_second_interface.png" alt="SnapFuel result" class="project-img active" />
+            <img src="images/snapfuel_first_interface.png" alt="SnapFuel interface" class="project-img" />
+            <div class="img-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-number">Project 01</span>
+            <h3>SnapFuel</h3>
+            <p class="project-problem"><strong>The problem:</strong> People quit their diets because logging food manually is tedious. SnapFuel lets you snap a photo of your meal, enter the portion in grams, and instantly get nutritional info — no more guessing what you just ate.</p>
+            <div class="project-tools">
+              <span>Python</span><span>Machine Learning</span><span>Computer Vision</span><span>TensorFlow</span><span>EfficientNet</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/bradysmith2027-pixel/SnapFuel" target="_blank" class="btn-small"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://huggingface.co/spaces/Bman321/SnapFuel" target="_blank" class="btn-small btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="placeholder-img"><i class="fas fa-layer-group"></i></div>
+          <div class="project-body">
+            <span class="project-number">Project 02 <span class="project-status">In Development</span></span>
+            <h3>Dreamboat Slabs — Card Scanner &amp; Profit Tracker</h3>
+            <p class="project-problem"><strong>The problem:</strong> Running a sports card business meant logging every card into a spreadsheet by hand — slow, tedious, and easy to get wrong. This full-stack app scans a physical card, auto-identifies it with computer vision (YOLOv8 region detection + GPT-4o Vision OCR), and tracks purchase price → sale price → profit automatically. Built multi-tenant from day one so other sellers can use it too.</p>
+            <div class="project-tools">
+              <span>React</span><span>FastAPI</span><span>Supabase</span><span>YOLOv8</span><span>GPT-4o Vision</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/bradysmith2027-pixel/card-scanner" target="_blank" class="btn-small"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="placeholder-img"><i class="fas fa-comments"></i></div>
+          <div class="project-body">
+            <span class="project-number">Project 03 <span class="project-status">In Development</span></span>
+            <h3>Hanashi Tomodachi — AI Japanese Conversation Partner</h3>
+            <p class="project-problem"><strong>The problem:</strong> Solo language learners have no one to actually <em>talk</em> to — the hardest part of learning a language. Hanashi Tomodachi is a voice-based AI partner: you have a real spoken conversation in Japanese, get live corrections, and can ask "what does that mean?" mid-conversation to get a translation before jumping back in.</p>
+            <div class="project-tools">
+              <span>Whisper (STT)</span><span>GPT-4o</span><span>Text-to-Speech</span><span>React</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <span class="section-label">Contact</span>
+      <h2 class="section-title">Let's talk.</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">If you have a role you think I'd be a good fit for, or just want to connect — reach out. I'm always open to a conversation.</p>
+          <a href="mailto:bradysmith_2027@depauw.edu" class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-text">
+              <small>Email</small>
+              <span>bradysmith_2027@depauw.edu</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/brady-smith-a1a301260/" target="_blank" class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-item-text">
+              <small>LinkedIn</small>
+              <span>brady-smith-a1a301260</span>
+            </div>
+          </a>
+          <a href="https://github.com/bradysmith2027-pixel" target="_blank" class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-item-text">
+              <small>GitHub</small>
+              <span>bradysmith2027-pixel</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-cta fade-up">
+          <h3>Ready to connect?</h3>
+          <p>The fastest way to reach me is straight to my inbox — I'll get back to you quickly.</p>
+          <a href="mailto:bradysmith_2027@depauw.edu?subject=Let's%20connect" class="btn-primary"><i class="fas fa-envelope"></i> Email Me</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
